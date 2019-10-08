@@ -254,18 +254,17 @@
   resolved "https://registry.yarnpkg.com/@aragon/test-helpers/-/test-helpers-1.2.2.tgz#95340175d923f45cf9b7e961d097ccf006db8cb4"
   integrity sha512-NJcK2dg8v8rLIMiIYslDsYVoskjDA5V4Z0C+bo+WoMvjzwVjlELGHdLpEbxLVvd6V7zb0pWH/qtQP5dCsgoETw==
 
-"@aragon/ui@^0.40.2":
-  version "0.40.2"
-  resolved "https://registry.yarnpkg.com/@aragon/ui/-/ui-0.40.2.tgz#eccd062b228321dbeb4de37d7404fbb27fe76b91"
-  integrity sha512-rcv9gTBpxoZ5qYfkXll8jVJLwJsYkvbkKcyEMd+yB7ih9qEsydIHQTfqiDpWgodwuRFX4WBXfpvwcHdxDu2ITw==
+"@aragon/ui@^1.0.0-alpha.28":
+  version "1.0.0-alpha.28"
+  resolved "https://registry.yarnpkg.com/@aragon/ui/-/ui-1.0.0-alpha.28.tgz#928971c287a17d94441b5a91ae7c2b08de3aee1b"
+  integrity sha512-TJh7R8HZT5kh5KNMPl9m7+mySUi+/GSMkgb20sLETqVBjwEKKv5r0ep7Hfn9Ylb42ElYDhCFJVf/MGwnW2+Jbg==
   dependencies:
     "@babel/runtime" "^7.3.1"
     airbnb-prop-types "^2.9.0"
     arg "^2.0.0"
     command-exists "^1.2.6"
     dayjs "^1.8.14"
-    lodash-es "^4.17.11"
-    onecolor "^3.0.5"
+    lodash-es "^4.17.15"
     popper.js "^1.14.4"
     prop-types "^15.6.0"
     react-blockies "^1.4.0"
@@ -2524,7 +2523,7 @@ blakejs@^1.1.0:
   resolved "https://registry.yarnpkg.com/blakejs/-/blakejs-1.1.0.tgz#69df92ef953aa88ca51a32df6ab1c54a155fc7a5"
   integrity sha1-ad+S75U6qIylGjLfarHFShVfx6U=
 
-bluebird@^3.4.7, bluebird@^3.5.0, bluebird@^3.5.1:
+bluebird@^3.4.7, bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.0.tgz#56a6a886e03f6ae577cffedeb524f8f2450293cf"
   integrity sha512-aBQ1FxIa7kSWCcmKHlcHFlT2jt6J/l4FzC7KcPELkOJOsPOb/bccdhmIrKDfXhwFrmc7vDoDrrepFvGqjyXGJg==
@@ -7853,7 +7852,7 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
-lodash-es@^4.17.11:
+lodash-es@^4.17.15:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
   integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
@@ -8975,11 +8974,6 @@ once@^1.3.0, once@^1.3.1, once@^1.3.2, once@^1.4.0:
   integrity sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
   dependencies:
     wrappy "1"
-
-onecolor@^3.0.5:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/onecolor/-/onecolor-3.1.0.tgz#b72522270a49569ac20d244b3cd40fe157fda4d2"
-  integrity sha512-YZSypViXzu3ul5LMu/m6XjJ9ol8qAy9S2VjHl5E6UlhUH1KGKWabyEJifn0Jjpw23bYDzC2ucKMPGiH5kfwSGQ==
 
 onetime@^2.0.0:
   version "2.0.1"

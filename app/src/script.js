@@ -43,8 +43,6 @@ api.store(
 )
 
 async function marshalAirdrop(id) {
-  // let ipfsGateway = location.hostname === 'localhost' ? 'http://localhost:8080/ipfs' : 'https://ipfs.eth.aragon.network/ipfs'
   let {root, dataURI} = await api.call('airdrops', id).toPromise()
-  // let data = await fetch(`${ipfsGateway}/${dataURI.split(':')[1]}`).then(r=>r.json())
   return { id, root, dataURI }
 }
