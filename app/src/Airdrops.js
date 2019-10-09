@@ -11,13 +11,13 @@ function Airdrops({airdrops, name, onSelect}){
     <React.Fragment>
       <section>
         <h2 size="xlarge">Ready to claim:</h2>
-        <CardLayout columnWidthMin={30 * GU} rowHeight={294}>
+        <CardLayout columnWidthMin={30 * GU} rowHeight={213}>
           {airdrops.filter(a=>(!a.awarded && a.userData)).map((d, i)=><AirdropCard airdrop={d} name={name} key={d.id} onSelect={onSelect} />)}
         </CardLayout>
       </section>
       <section>
         <h2 size="xlarge">Archive:</h2>
-        <CardLayout columnWidthMin={30 * GU} rowHeight={294}>
+        <CardLayout columnWidthMin={30 * GU} rowHeight={135}>
           {airdrops.filter(a=>(a.awarded || !a.userData)).map((d, i)=><AirdropCard airdrop={d} name={name} key={d.id} onSelect={onSelect} />)}
         </CardLayout>
       </section>
@@ -61,7 +61,7 @@ function AirdropCard({airdrop, name, onSelect}) {
       </section>
       <footer style={{display: "flex", justifyContent: "flex-end"}}>
         {!awarded && userData &&
-          <Button mode="strong" emphasis="positive" onClick={()=>api.award(id, name, userData.amount, userData.proof).toPromise()}>Claim</Button>
+          <Button mode="strong" emphasis="positive" onClick={(e)=>{e.stopPropagation();api.award(id, name, userData.amount, userData.proof).toPromise()}}>Claim</Button>
         }
       </footer>
     </Card>
